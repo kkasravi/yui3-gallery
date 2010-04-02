@@ -140,7 +140,7 @@ var UA = Y.UA,
 	* The NodeAccordion class is a plugin for a Node instance.  The class is used via  
 	* the <a href="Node.html#method_plug"><code>plug</code></a> method of Node and 
 	* should not be instantiated directly.
-	* @namespace plugin
+	* @namespace Y.Plugin
 	* @class NodeAccordion
 	*/
 	NodeAccordion = function () {
@@ -157,6 +157,7 @@ NodeAccordion.ATTRS = {
 	* Nodes representing the list of active items.
 	*
 	* @attribute activeItems
+	* @readOnly
 	* @type Y.NodeList
 	*/
 	activeItems: {
@@ -169,6 +170,7 @@ NodeAccordion.ATTRS = {
 	* Nodes representing the list of items.
 	*
 	* @attribute items
+	* @readOnly
 	* @type Y.NodeList
 	*/
 	items: {
@@ -259,7 +261,6 @@ NodeAccordion.ATTRS = {
 	* </ol>
 	* 
 	* @attribute speed
-	* @readOnly
 	* @default 0.4
 	* @type numeric
 	*/	
